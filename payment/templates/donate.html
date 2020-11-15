@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Donation Page</title>
+  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href = "css/style.css">
+  <style>
+  body {
+      font-family: 'Sansita Swashed', cursive;
+      margin: 0px;
+      padding: 0px;
+    background-color: blanchedalmond;
+    }
+  .btn1 {
+    font-family: 'Sansita Swashed', cursive;
+    color: black;
+    background-color: #85d6f1;
+        margin: 17px 201px;
+    font-size: 10px;
+    font-size: 30px;
+    border: 3px solid rgb(20 133 254 / 50%);
+    border-radius: 10px;
+}
+    .btn1:hover{
+      background-color: lightgrey;
+    }
+    .container{
+         border: 6px solid #eda8d3;
+    margin: 20px 445px;
+    padding: 22px 46px;
+    width: 40%;
+    border-radius: 34px;
+    background-color: #ac0e0e30;
+    }
+    .button{
+                font-family: 'Sansita Swashed', cursive;
+    color: black;
+    background-color: #85d6f1;
+    margin: 9px 169px;
+    font-size: 10px;
+    font-size: 39px;
+    border: 3px solid rgb(20 133 254 / 50%);
+    border-radius: 10px;
+    }
+    .button:hover
+    {
+      color: grey;
+      background-color:lightbluess;
+    }
+    .form-group input{
+      font-family: 'Sansita Swashed', cursive;
+      text-align: center;
+      display: block;
+      padding: 4px;
+      margin: 7px 3px;
+      border: 5px solid cadetblue;
+      width: 89%;
+      font-size: 19px;
+      border-radius:10px;
+    }
+  </style>
+  <body>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+           <a class="navbar-brand" href="{% url 'whydonte' %}"><strong>Why donate?</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+          <a class="nav-link" href="{% url 'thought' %}"><em>Thought of the day</em> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'surprise' %}"><strong>Surprise</strong></a>
+      </li>
+    </ul>
+       <h1 class="text-hide" style="background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kindpng.com%2Fimgv%2FiRRooRm_donate-to-gain-guam-donate-icon-svg-hd%2F&psig=AOvVaw27NvxFuUtUoryOOSN3KC16&ust=1605215664798000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDxpdK0--wCFQAAAAAdAAAAABAY');">Bootstrap</h1>w
+<!--    <form class="form-inline my-2 my-lg-0">-->
+<!--      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--    </form>-->
+  </div>
+</nav>
+       <div class="alert alert-primary" role="alert">
+         Giving is not just about make a donation it's about making a <strong>difference</strong>
+</div>
+     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://st2.depositphotos.com/2304021/7736/i/600/depositphotos_77360950-stock-photo-young-stray-dog-sleeping.jpg" class="d-block w-100" alt="..." style="width:128px;height:400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><em>If having a soul means being able to feel love and loyalty and gratitude, then animals are better off than a lot of humans.</em></h5>
+        <p>―James Herriot</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2020/02/21/01/25/cat-4866237_1280.jpg" class="d-block w-100" alt="..." style="width:128px;height:400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><em>The greatness of a nation and its moral progress can be judged by the way its animals are treated.</em></h5>
+        <p>― Mahatma Gandhi</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.istockphoto.com/photos/juvenile-bird-fate-is-in-the-hands-of-human-picture-id1128140771?k=6&m=1128140771&s=612x612&w=0&h=HYBKABMzMbJuz_VOAK4YUkdkJ4v9fUE0ikqBQOHHYYo=" class="d-block w-100" alt="..." style="width:128px;height:400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><em>Until one has loved an animal, a part of one's soul remains unawakened.</em></h5>
+        <p>― Anatole France</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+           <div class="container">
+      <h1>Enjoy the love of animals</h1>
+      <h2>do you want to feel the love?</h2>
+      <h3>then why to wait...</h3>
+      <form action="noaction.ph">
+<!--        <div class="form-group">-->
+<!--        <input type="text" name="" placeholder="Enter your name" >-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--        <input type="text" name="" placeholder="Enter your age" >-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--        <input type="text" name="" placeholder="Enter preferred location" >-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--        <input type="text" name="" placeholder="Enter the season you desire" >-->
+<!--        </div>-->
+<!--        <button class="button">SUBMIT</button>-->
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn1" data-toggle="modal" data-target="#exampleModal">
+  GIFT
+</button>
+<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G1MdNFBSJKfhRh"> </script> </form>
+<!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">A note for a kind soul</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Thank you for your generous gift. We are thrilled to have your support. Through your donation we have been able to accomplish to arrange food and shelter for animals. You truly make the difference for us, and we are extremely grateful!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thank You</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </form>
+      </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+</html>
