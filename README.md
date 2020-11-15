@@ -13,3 +13,9 @@ why donate?
 
 ![](images/Screenshot%202020-11-15%20143253.png)
 thought of the day
+
+![](images/Screenshot%202020-11-15%20143209.png)
+surprise
+
+![](images/Screenshot%202020-11-15%20144833.png)
+gift
